@@ -95,6 +95,18 @@ When you run ```npm run build```, Vue will create the css, html, and javascript 
 it's very straightforward, just follow the format in the file: 'src/data/projects.js' to add a new project, and vue will render that project cleanly. 
 
 ## adding more pages
+Create a new vue file in the 'views' folder, then go to 'router' and create a new path in the routes array using the same syntax
+```javascript
+{
+		path: '/path/to/your/new/page/here',
+		name: 'NameOfYourNewPageHere',
+		component: NameOfTheNewComponentYouMadeInViewsHere,
+		meta: {
+			title: 'Give me a unique name',
+		},
+	},
+```
+You will now be able to see your new page when you next load your site, so to make changes to that new webpage you need to edit the component in the 'views' folder that corresponds to that route.
 
 
 ## Notes
