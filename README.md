@@ -88,11 +88,17 @@ When you run ```npm run build```, Vue will create the css, html, and javascript 
 - main.js: don't mess with this too much because this is the root of your Vue application
 - App.vue: This is the component that serves as the container for all of the different pages for your site. VueRouter will replace **router-view** with the component that is mapped to the url. Change this to style the general layout of your site.
 
-### 
-
-
 ## adding projects
 it's very straightforward, just follow the format in the file: 'src/data/projects.js' to add a new project, and vue will render that project cleanly. 
+#### example
+```javascript
+{
+	id: 3,
+	title: 'Vue Portfolio',
+	category: 'Web Application',
+	img: require('@/assets/images/VueImage.jpeg'),
+},
+```
 
 ## adding more pages
 Create a new vue file in the 'views' folder, then go to 'router' and create a new path in the routes array using the same syntax
